@@ -1,2 +1,2 @@
 # nyc-recycling
-Interactive Mapbox featuring NYC dropoff locations for "hard to recycle" household items
+Interactive Mapbox map featuring NYC dropoff locations for "difficult to recycle" household items
