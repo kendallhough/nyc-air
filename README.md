@@ -1,2 +1,2 @@
-# nyc-recycling
-Interactive Mapbox map featuring NYC dropoff locations for "difficult to recycle" household items
+# nyc-aqi
+Mapbox map showcasing the average air quality index (for fine particulate matter (PM2.5)) in 2019 across all NYC neighborhoods. 
