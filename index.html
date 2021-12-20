@@ -13,10 +13,10 @@
         body {
             margin: 0;
             padding: 0;
-            background: #444444;
+            background: #fffff;
             font-family: 'helvetica', Arial, Helvetica, sans-serif;
             font-weight: 300;
-            color: #d6d6d6;
+            color: #000000;
             font-size: 0.8em;
 
         }
@@ -54,7 +54,7 @@
         }
 
         a {
-            color: #d6d6d6;
+            color: #a87f49;
             text-decoration: none;
         }
 
@@ -66,7 +66,7 @@
             padding: 0px 20px 4px 20px;
             /* font-size: 0.96em; */
             line-height: 1.6em;
-            color: #d6d6d6;
+            color: #a87f49;
         }
 
         li {
@@ -104,6 +104,13 @@
             float: left;
             width: 48%;
             padding-right: 20px;
+            text-align:justify;
+    
+        }
+
+        .img {
+            float: left;
+            margin: 5px;
         }
 
         .column {
@@ -141,19 +148,34 @@
         <div class="row">
             <div class="first-column">
                 <p>
-                    Air pollution, of which fine particulate matter is a major contributor, is an environemtnal threat to dense urban populations. These particles are emitted from vehicles, boilers, and other combustion and harm health. The map above was created to visualize how vulnerability varies across neighborhoods in New York City. 
+                    Air pollution, of which fine particulate matter is a major contributor, is an environemtnal threat to dense urban populations. These particles are emitted from vehicles, boilers, and other combustion of fossil fuels and affect human health (namely heart and lung functions). The map above was created to visualize how vulnerability varies across neighborhoods in New York City. 
                     <br><br>
-Air quality data used for this project was gathered from the NYC <a href=“https://a816-dohbesp.nyc.gov/IndicatorPublic/Subtopic.aspx?theme_code=1,4&subtopic_id=122”>Environment & Health Data Portal</a>. The mean PM.2 (mcg per cubic meter) from the year 2019 was extracted and joined to a <a href=“https://opendata.cityofnewyork.us/“>NYCOpenData</a> neighborhood outline shapefile in QGIS. 
+</p>
+                
+            <p><b>Legend</b><br>
+            <img src="/graphics/Legend.png"
+            title="Legend"><br>
+            Air quality data used for this project was gathered from the NYC <a href=“https://a816-dohbesp.nyc.gov/IndicatorPublic/Subtopic.aspx?theme_code=1,4&subtopic_id=122”>Environment & Health Data Portal</a>. The mean PM.2 (mcg per cubic meter) from the year 2019 was extracted. Next, using QGIS 3.2 on macOS 12.0.01, the data was joined to a <a href=“https://opendata.cityofnewyork.us/“>NYCOpenData</a> shapefile containing neighborhood boundaries. 
 <br><br>
 After preparing the data, it was uploaded to Mapbox and stylized into a satellite choropleth map using a stock Mapbox tilesets.
+</p>
 
+</p>
 
- <br><br>Map authored by Kendall Hough<br>
- <a href="https://github.com/kendallhough">Follow me on Github @kendallhough!</a>               
+</div>
 
+ <div class="column">
+    <img class="max-image-width" src="/graphics/NYC.jpeg"
+        title="Pollution">
+    <img class="max-image-width" src="/graphics/pollution_cdc.jpeg"
+        title="NYC">
+    <div class="linkbox">Images from <a href="https://www.gothamgazette.com/index.php/government/5111-while-improving-quiet-crisis-air-quality-persists-new-york-city-asthma-air-pollution">Gotham Gazette</a> and <a href="https://www.cdc.gov/air/particulate_matter.html"> the CDC</a>.</div>
 
+</div>
             
-
+<hr>Map authored by Kendall Hough<br>
+ <a href="https://github.com/kendallhough">Follow me on Github @kendallhough!</a>               
+</section>
 
         
 </body>
