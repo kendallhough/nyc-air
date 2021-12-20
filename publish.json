@@ -1,0 +1,7 @@
+{
+    "title": "New York City Air Quality (PM2.5) by Neighborhood 2019",
+    "info": "This map visualizes mean amounts of fine particulate matter (PM2.5 mcg per cubic meter) in the air in NYC neighborhoods for the year 2019.", 
+    "coordinates": [40.7128, 74.0060],
+    "author": "kendallhough", 
+    "link": "https://kendallhough.github.io/nyc-air/" 
+}
