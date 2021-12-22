@@ -13,7 +13,7 @@
         body {
             margin: 0;
             padding: 0;
-            background: #fffff;
+            background: #ffffff;
             font-family: 'helvetica', Arial, Helvetica, sans-serif;
             font-weight: 300;
             color: #000000;
@@ -147,9 +147,18 @@
 </p>
                 
             <p><b>Legend</b><br>
-            <img src="graphics/legend.png"
-            title="legend"><br>
-            Air quality data used for this project was gathered from the NYC <a href=“https://www1.nyc.gov/”>Environment & Health Data Portal</a>. The mean PM.2 (mcg per cubic meter) from the year 2019 was extracted. Next, using QGIS 3.2 on macOS 12.0.01, the data was joined to a <a href=“https://opendata.cityofnewyork.us/“>NYCOpenData</a> shapefile containing neighborhood boundaries. 
+            <img src="graphics/legend.png" title="legend">
+            <br>
+            Air quality data used for this project was gathered from the <a href="https://a816-dohbesp.nyc.gov/IndicatorPublic/Subtopic.aspx?theme_code=1,4&subtopic_id=122">NYC Environment & Health Data Portal</a>. The mean PM.2 (mcg per cubic meter) from the year 2019 was extracted. Next, using QGIS 3.2 on macOS 12.0.01, the data was joined to a <a href=“https://opendata.cityofnewyork.us/“>NYCOpenData</a> shapefile containing neighborhood boundaries. 
+
+           <!--Issue could be due to url encoding for the charaters ? and , in the url-->
+            <!--https://www.w3schools.com/tags/ref_urlencode.asp-->
+            <!--The url for the website that you included in the Canvas submission is as follows-->
+            <!--https://a816-dohbesp.nyc.gov/IndicatorPublic/Subtopic.aspx?theme_code=1,4&subtopic_id=122-->
+            <!--But if we use that url with an a href tag, we get this error message-->
+            <!--https://a816-dohbesp.nyc.gov/IndicatorPublic/Subtopic.aspx%3Ftheme_code=1%2C4&subtopic_id=122-->
+            <!--Note how this second url is using some of the encoding characters in that the ? becomes %3, but the original url is not encoding in this way-->
+
 <br><br>
 After preparing the data, it was uploaded to Mapbox and stylized into a satellite choropleth map using a stock Mapbox tilesets.
 </p>
